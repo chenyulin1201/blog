@@ -1,0 +1,20 @@
+// 使用方式示例：@include remCalc(margin, 10, 0, 20, 0) 
+// @mixin pxToRem($property, $values...) {
+//   $remValues: ();
+//   $pixelBase: 37.5;
+//   @each $item in $values {
+//     $remValues: append($remValues, ($item / $pixelBase)+rem);
+//   }
+//   #{$property}: $remValues; 
+// }
+
+// 使用方式示例： padding: pxToRem2(10,20,10,30);
+@function pxToRem2($values...) {
+  $remValues: ();
+  $pixelBase: 37.5;
+  
+  @each $item in $values {
+    $remValues: append($remValues, ($item / $pixelBase)+rem);
+  }
+  @return $remValues;
+}

@@ -1,0 +1,15 @@
+@import '../../common/px2Rem.scss';
+.home_wrap {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    width: 100%;
+    height: pxToRem2(600);
+    background-image: url('../assets/image/home-bg.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+  }
+}

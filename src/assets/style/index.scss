@@ -1,0 +1,15 @@
+@import './common/font_family.scss';
+@import './common/reset.scss';
+@import './common/icon.scss';
+@import './common/px2Rem.scss';
+
+
+html, body, #app, .wrap{
+  height: 100%;
+}
+
+.wrap {
+  position: relative;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
