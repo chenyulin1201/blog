@@ -3,8 +3,8 @@
   "author": "chenyulin",
   "description": "vuepress搭建的个人博客",
   "scripts": {
-    "dev": "vuepress dev example",
-    "build": "vuepress build example",
+    "dev": "vuepress dev blog",
+    "build": "vuepress build blog",
     "deploy": "bash deploy.sh"
   },
   "devDependencies": {
