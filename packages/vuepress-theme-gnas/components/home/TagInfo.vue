@@ -32,6 +32,8 @@ export default {
 </script>
 <style lang="stylus">
 .tag-info-wrap {
+    display flex
+    justify-content center
     width 100% 
     line-height 1.8
     padding: 1rem 1.2rem;

@@ -2,11 +2,12 @@
     <div class="love-info-wrap">
         <div class="avatar-info">
             <img alt :src="$site.themeConfig.home.loveConfig.boy" />
-            <i class="gnas-i gnas-i-love"></i>
+            <!-- <i class="gnas-i gnas-i-love"></i> -->
+            <img class="loveImg" alt :src="$site.themeConfig.home.loveConfig.img" />
             <img alt :src="$site.themeConfig.home.loveConfig.girl" />
         </div>
-        <p>{{ daysNum }} 天 {{ hoursNum }} 时 {{ minutesNum }} 分 {{ secondsNum }} 秒
-        </p>
+        <p v-if="this.$site.themeConfig.home.loveConfig.startDay">{{ daysNum }} 天 {{ hoursNum }} 时 {{ minutesNum }} 分 {{ secondsNum }} 秒</p>
+        <p v-else>Unknown time</p>
     </div>
 </template>
 <script>
@@ -61,9 +62,17 @@ export default {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        border: #fff 2px solid;
         box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
         margin: 0 20px;
+        }
+
+        .loveImg {
+            width: 24px;
+            height: 24px;
+            background none 
+            border-radius unset 
+            box-shadow none 
+            border none 
         }
 
         i {

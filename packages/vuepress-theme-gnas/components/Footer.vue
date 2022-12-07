@@ -1,6 +1,6 @@
 <template>
     <footer class="footer-wrap" v-if="visible">
-        <div :style="{ 'background-image': `url(${bannerImg})` }" class="bg">
+        <!-- <div :style="{ 'background-image': `url(${bannerImg})` }" class="bg">
         </div>
         <div class="footer-main-wrap">
             <div class="copyright">
@@ -20,7 +20,7 @@
                     <i class="leancloud-visitors-count"></i>
                 </span>
             </div>
-        </div>
+        </div> -->
     </footer>
 </template>
 <script>
@@ -46,7 +46,8 @@ export default {
 <style lang="stylus" scoped>
   .footer-wrap {
     position: relative;
-    background: rgb(0, 0, 0);
+    padding-top 120px
+    background: none 
     font-size:16px;
     .bg {
       display: block;

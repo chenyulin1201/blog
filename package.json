@@ -1,10 +1,11 @@
 {
   "name": "vuepress-theme-gnas",
-  "author": "ShnHz",
-  "description": "A simple and beautiful vuepress Blog & Doc theme.",
+  "author": "chenyulin",
+  "description": "vuepress搭建的个人博客",
   "scripts": {
     "dev": "vuepress dev example",
-    "build:example": "vuepress build example"
+    "build": "vuepress build example",
+    "deploy": "bash deploy.sh"
   },
   "devDependencies": {
     "@vuepress/plugin-back-to-top": "^1.9.7",

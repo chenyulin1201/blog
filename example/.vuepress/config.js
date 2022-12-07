@@ -1,20 +1,24 @@
 module.exports = {
-    title: "vuepress-theme-gnas",
+    title: "Chen YuLin",
     dest: 'example/dist',
+    base: '/blog/',
     plugins: {
         '@vuepress/back-to-top': true
     },
     theme: require.resolve('../../packages/vuepress-theme-gnas'),
+    head: [
+        [
+            'link', { rel: 'icon', href: '/img/favico.png' }
+        ]
+    ],
     themeConfig: {
         smoothScroll: true,
         themeMode: {
             enable: true,
             default: 'light'
         },
-        // 锁定页面默认密码，请使用MD5，4位数MD5加密后的密码
-        password: '81dc9bdb52d04dc20036dbd8313ed055',
         // 首屏加载动画
-        firstLoading: true,
+        firstLoading: false,
         firstLoadingDuration: 2000,
         // blog文章所在位置
         blogBase: '/views/blog',
@@ -24,19 +28,19 @@ module.exports = {
             dateFormat: 'MM dd,yyyy',
         },
         // 全站访问量
-        globalAccess: true,
+        globalAccess: false,
         // 评论系统 文档：https://valine.js.org/，支持valine所有配置
         valine: {
-            enable: true,
+            enable: false,
             appId: 'xxx',
             appKey: 'xxx',
         },
 
         // 加入公益404计划，默认为true
-        notFoundPagePublicWelfare: false,
+        notFoundPagePublicWelfare: true,
         // 音乐播放器
         music: {
-            enable: true,
+            enable: false,
             autoplay: false,
             list: [{
                     name: 'Fine乐团_没有人不比我快乐',
@@ -48,15 +52,12 @@ module.exports = {
                 }
             ]
         },
-
-        logo: '/img/logo.png',
         home: {
             titleLogo: '/img/titleLogo.gif',
-            title: '说说我的生活',
+            title: 'Chen YuLin Blog',
             description: 'Think twice before you do.',
 
             bannerList: [
-                '/img/bg1.jpg',
                 '/img/bg2.jpg',
                 '/img/bg3.jpg',
             ],
@@ -64,28 +65,30 @@ module.exports = {
                 enable: true,
                 avatar: '/img/avatar.jpg',
                 bookmark: true,
-                github: 'https://github.com/ShnHz',
-                qq: 123456789,
-                wx: '123456789',
-                email: '123456789@qq.com',
-                alipay: '/img/alipay_ercode.jpg'
+                github: 'https://github.com/chenyulin1201',
+                qq: 1395748818,
+                wx: '1395748818',
+                email: '1395748818@qq.com',
+                alipay: '',
             },
             loveConfig: {
                 enable: true,
-                boy: '/img/boy.jpg',
+                boy: '/img/avatar.jpg',
                 girl: '/img/girl.jpg',
-                startDay: '2019/06/29'
+                img: '/img/loveImg.ico',
+                startDay: ''
             },
             carouselConfig: {
                 enable: true,
-                list: [{
-                        title: '日记',
-                        content: '做一个热爱生活的人，把生活记录下来。',
-                        bg: '/img/carousel1.jpg',
-                    },
+                list: [
+                    // {
+                    //     title: '日记',
+                    //     content: '做一个热爱生活的人，把生活记录下来。',
+                    //     bg: '/img/carousel1.jpg',
+                    // },
                     {
-                        title: '学习',
-                        content: '阶段性学习！！',
+                        title: '记录',
+                        content: '阶段性记录！！',
                         bg: '/img/carousel2.jpg',
                     },
                 ]
@@ -95,11 +98,11 @@ module.exports = {
             }
         },
         // 备案号
-        record: '浙ICP备00000000号-0',
-        recordLink: 'http://beian.miit.gov.cn/',
+        // record: '浙ICP备00000000号-0',
+        // recordLink: 'http://beian.miit.gov.cn/',
 
         // 作者
-        author: '野宁新之助',
+        author: 'Chen YuLin',
 
 
         // 项目开始时间
@@ -122,14 +125,14 @@ module.exports = {
                 text: '笔记',
                 link: '/views/notes/Web'
             },
-            {
-                text: '友链',
-                link: '/views/Friend'
-            },
-            {
-                text: 'GitHub',
-                link: 'https://github.com/ShnHz/vuepress-theme-gnas'
-            }
+            // {
+            //     text: '友链',
+            //     link: '/views/Friend'
+            // },
+            // {
+            //     text: 'GitHub',
+            //     link: 'https://github.com/ShnHz/vuepress-theme-gnas'
+            // }
         ],
         sidebar: [
             '/views/notes/Web',
@@ -157,47 +160,20 @@ module.exports = {
         activeHeaderLinks: false,
 
         lastUpdated: 'Last Updated', // 文档更新时间：每个文件git最后提交的时间
-        tagList: [{
-            "name": "Test",
-            "type": "test"
-        }, {
-            "name": "vue",
-            "type": "vue"
-        }, {
-            "name": "css",
-            "type": "css"
-        }, {
-            "name": "javascript",
-            "type": "js"
-        }, {
-            "name": "小程序",
-            "type": "applets"
-        }, {
-            "name": "vuepress",
-            "type": "vuepress"
-        }, {
-            "name": "转",
-            "type": "info"
-        }, {
-            "name": "music",
-            "type": "music",
-            "icon": "gnas-i gnas-i-musicnote"
-        }, {
-            "name": "奇闻异事",
-            "type": "anecdote"
-        }, {
-            "name": "movie",
-            "type": "movie",
-        }, {
-            "name": "git",
-            "type": "git"
-        }, {
-            "name": "工具",
-            "type": "tool"
-        }, {
-            "name": "算法",
-            "type": "algorithm"
-        }],
+        tagList: [
+            {
+                "name": "vue",
+                "type": "vue"
+            },
+            {
+                "name": "css",
+                "type": "css"
+            },
+            {
+                "name": "javascript",
+                "type": "js"
+            },
+        ],
 
         live2d: {
             model: 'hijiki',

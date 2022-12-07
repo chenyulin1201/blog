@@ -106,13 +106,11 @@ export default {
             width 80px;
             border-radius: 50%;
             transform: none;
+            transition: filter 375ms ease-in 0.2s, transform 0.3s;
 
             &:hover {
-                transform: rotate(666turn);
-                transition-delay: 1s;
-                transition-property: all;
-                transition-duration: 59s;
-                transition-timing-function: cubic-bezier(0.34, 0, 0.84, 1);
+                cursor pointer
+                transform: rotate(360deg);
             }
         }
     }
@@ -153,6 +151,8 @@ export default {
     }
 
     .social-info {
+        display: flex;
+        justify-content: center;
         padding: 1rem 1.5rem;
 
         i {
