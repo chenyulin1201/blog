@@ -1,7 +1,7 @@
 module.exports = {
     title: "Chen YuLin",
-    dest: 'blog/dist',
-    base: '/blog/',
+    // dest: '/blog/dist',
+    base: './',
     plugins: {
         '@vuepress/back-to-top': true
     },

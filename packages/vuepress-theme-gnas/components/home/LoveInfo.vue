@@ -6,7 +6,7 @@
             <img class="loveImg" alt :src="$site.themeConfig.home.loveConfig.img" />
             <img alt :src="$site.themeConfig.home.loveConfig.girl" />
         </div>
-        <p v-if="this.$site.themeConfig.home.loveConfig.startDay">{{ daysNum }} 天 {{ hoursNum }} 时 {{ minutesNum }} 分 {{ secondsNum }} 秒</p>
+        <p v-if="$site.themeConfig.home.loveConfig.startDay">{{ daysNum }} 天 {{ hoursNum }} 时 {{ minutesNum }} 分 {{ secondsNum }} 秒</p>
         <p v-else>Unknown time</p>
     </div>
 </template>
