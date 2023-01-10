@@ -1,7 +1,7 @@
 ---
 date: 2022/12/01 13:22:35 
 config: {
-    top: false,
+    top: true,
     dir: false,
     tag: ['vue'],
     valine: false,

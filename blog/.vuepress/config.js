@@ -1,7 +1,6 @@
 module.exports = {
     title: "Chen YuLin",
-    // dest: '/blog/dist',
-    base: './',
+    base: '/blog/',
     plugins: {
         '@vuepress/back-to-top': true
     },
@@ -53,17 +52,17 @@ module.exports = {
             ]
         },
         home: {
-            titleLogo: '/img/titleLogo.gif',
+            titleLogo: '/blog/img/titleLogo.gif',
             title: 'Chen YuLin Blog',
             description: 'Think twice before you do.',
 
             bannerList: [
-                '/img/bg2.jpg',
-                '/img/bg3.jpg',
+                '/blog/img/bg2.jpg',
+                '/blog/img/bg3.jpg',
             ],
             authorConfig: {
                 enable: true,
-                avatar: '/img/avatar.jpg',
+                avatar: '/blog/img/avatar.jpg',
                 bookmark: true,
                 github: 'https://github.com/chenyulin1201',
                 qq: 1395748818,
@@ -73,9 +72,9 @@ module.exports = {
             },
             loveConfig: {
                 enable: true,
-                boy: '/img/avatar.jpg',
-                girl: '/img/girl.jpg',
-                img: '/img/loveImg.ico',
+                boy: '/blog/img/avatar.jpg',
+                girl: '/blog/img/girl.jpg',
+                img: '/blog/img/loveImg.ico',
                 startDay: ''
             },
             carouselConfig: {
@@ -84,12 +83,12 @@ module.exports = {
                     // {
                     //     title: '日记',
                     //     content: '做一个热爱生活的人，把生活记录下来。',
-                    //     bg: '/img/carousel1.jpg',
+                    //     bg: '/blog/img/carousel1.jpg',
                     // },
                     {
                         title: '记录',
                         content: '阶段性记录！！',
-                        bg: '/img/carousel2.jpg',
+                        bg: '/blog/img/carousel2.jpg',
                     },
                 ]
             },
